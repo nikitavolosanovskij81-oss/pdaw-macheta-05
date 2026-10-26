@@ -11,6 +11,13 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #1b7f3b;
+  outline-offset: 2px;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 22px;
@@ -111,7 +118,7 @@ header nav a:first-child::after {
   color: #555;
 }
 .hero-buttons { display: flex; gap: 10px; margin-bottom: 28px; }
-.hero-stats { display: flex; gap: 28px; font-size: 11px; color: #777; }
+.hero-stats { display: flex; gap: 28px; font-size: 11px; color: #666; }
 .hero-stats strong {
   display: block;
   font-family: 'Bitter', serif;
@@ -137,7 +144,8 @@ header nav a:first-child::after {
 .hero-card strong { display: block; font-size: 13px; color: #2b1810; }
 .hero-card-top { top: 20px; right: -20px; }
 .hero-card-bottom { bottom: 30px; left: -30px; }
-/* Section headings (общие) */
+
+/* Section headings (shared) */
 .section-head { margin-bottom: 40px; text-align: center; }
 .section-label {
   display: block;
@@ -159,6 +167,7 @@ header nav a:first-child::after {
 .advantage-icon { position: absolute; top: 24px; right: 20px; font-size: 24px; }
 .advantage h3 { margin: 14px 0 8px; font-size: 18px; }
 .advantage p { font-size: 14px; line-height: 1.5; color: #777; }
+
 /* 5. Pizzas */
 .pizzas { padding: 60px 30px; background: #fff8f3; }
 .pizzas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 20px; }
@@ -183,22 +192,9 @@ header nav a:first-child::after {
 .pizza-info p { margin: 6px 0 14px; font-size: 12px; color: #777; }
 .pizza-bottom { display: flex; align-items: center; justify-content: space-between; }
 .price { font-family: 'Bitter', serif; font-size: 18px; font-weight: 700; color: #b71c1c; }
-.old-price { margin-left: 6px; font-size: 11px; font-weight: 400; color: #999; }
+.old-price { margin-left: 6px; font-size: 11px; font-weight: 400; color: #767676; }
 .pizza-bottom .btn { padding: 10px 18px; font-size: 12px; }
-/* 11. Fixed button */
-.call-btn {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 200;
-  padding: 14px 22px;
-  border-radius: 30px;
-  background: #1b7f3b;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
+
 /* 6. Reviews */
 .reviews { padding: 60px 30px; }
 .review { position: relative; max-width: 760px; margin: 0 auto; text-align: center; }
@@ -207,6 +203,7 @@ header nav a:first-child::after {
 .arrow {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   border: 1px solid #e5e5e5;
@@ -235,6 +232,7 @@ header nav a:first-child::after {
 .dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: #dfe3ea; }
 .dot.active { background: #b71c1c; }
+
 /* 7. Gallery */
 .gallery { padding: 60px 30px; background: #fff8f3; }
 .gallery-grid {
@@ -245,6 +243,7 @@ header nav a:first-child::after {
 }
 .gallery-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
 .gallery-tall { grid-row: span 2; }
+
 /* 8. Menu */
 .menu { padding: 60px 30px; }
 .menu-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
@@ -278,6 +277,7 @@ header nav a:first-child::after {
   font-size: 10px;
   font-weight: 600;
 }
+
 /* 9. Subscribe */
 .subscribe { padding: 60px 30px; background: #fde8e0; }
 .subscribe-card {
@@ -306,8 +306,10 @@ header nav a:first-child::after {
 .subscribe-card h2 { margin-bottom: 8px; font-family: 'Bitter', serif; font-size: 24px; }
 .subscribe-card p { margin-bottom: 24px; font-size: 14px; color: #777; }
 .subscribe-form { display: flex; border: 1px solid #e5e5e5; border-radius: 4px; padding: 4px; }
-.subscribe-form input { flex: 1; border: none; outline: none; padding: 0 14px; font-size: 14px; }
+.subscribe-form:focus-within { border-color: #1b7f3b; }
+.subscribe-form input { flex: 1; min-width: 0; border: none; outline: none; padding: 0 14px; font-size: 14px; }
 .subscribe-form .btn { border: none; cursor: pointer; }
+
 /* 10. Footer */
 footer { padding: 50px 30px 30px; background: #1c1210; color: #fff; text-align: center; }
 footer .logo { color: #fff; }
@@ -326,3 +328,18 @@ footer .logo span { color: #1b7f3b; }
   font-size: 13px;
 }
 .copyright { padding-top: 24px; border-top: 1px solid #3a2e2b; font-size: 12px; color: #a9a0a0; }
+
+/* 11. Fixed button */
+.call-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  padding: 14px 22px;
+  border-radius: 30px;
+  background: #1b7f3b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forno Vecchio — pizzerie napoletană cu cuptor pe lemne în Bălți. Livrare în tot orașul, zilnic 11:00–23:00.">
     <title>Forno Vecchio</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Fira+Sans:wght@400;500;600&display=swap"
@@ -21,7 +22,7 @@
     </div>
 
     <header>
-        <input type="search" placeholder="Caută o pizza...">
+        <input type="search" placeholder="Caută o pizza..." aria-label="Caută o pizza">
         <a href="#" class="logo">🍕 Forno <span>Vecchio</span></a>
         <a href="#" class="btn btn-primary">Comandă online</a>
         <nav>
@@ -63,6 +64,7 @@
                 </div>
             </div>
         </section>
+
         <section class="advantages">
             <div class="section-head">
                 <span class="section-label">Cum lucrăm</span>
@@ -90,6 +92,7 @@
                 </article>
             </div>
         </section>
+
         <section class="pizzas">
             <div class="section-head">
                 <span class="section-label">Cele mai comandate</span>
@@ -99,7 +102,7 @@
             <div class="pizzas-grid">
                 <article class="pizza-card">
                     <div class="pizza-image">
-                        <img src="img/pizza-1.png" alt="Margherita">
+                        <img src="img/pizza-1.png" alt="Margherita" loading="lazy">
                         <span class="tag">TOP</span>
                     </div>
                     <div class="pizza-info">
@@ -112,7 +115,7 @@
                     </div>
                 </article>
                 <article class="pizza-card">
-                    <div class="pizza-image"><img src="img/pizza-2.png" alt="Diavola"></div>
+                    <div class="pizza-image"><img src="img/pizza-2.png" alt="Diavola" loading="lazy"></div>
                     <div class="pizza-info">
                         <div class="pizza-title">
                             <h3>Diavola</h3><span class="stars">★★★★★</span>
@@ -123,7 +126,7 @@
                     </div>
                 </article>
                 <article class="pizza-card">
-                    <div class="pizza-image"><img src="img/pizza-3.png" alt="Quattro formaggi"></div>
+                    <div class="pizza-image"><img src="img/pizza-3.png" alt="Quattro formaggi" loading="lazy"></div>
                     <div class="pizza-info">
                         <div class="pizza-title">
                             <h3>Quattro formaggi</h3><span class="stars">★★★★☆</span>
@@ -135,7 +138,7 @@
                 </article>
                 <article class="pizza-card">
                     <div class="pizza-image">
-                        <img src="img/pizza-4.png" alt="Capricciosa">
+                        <img src="img/pizza-4.png" alt="Capricciosa" loading="lazy">
                         <span class="tag">-12%</span>
                     </div>
                     <div class="pizza-info">
@@ -148,7 +151,7 @@
                     </div>
                 </article>
                 <article class="pizza-card">
-                    <div class="pizza-image"><img src="img/pizza-5.png" alt="Prosciutto rucola"></div>
+                    <div class="pizza-image"><img src="img/pizza-5.png" alt="Prosciutto rucola" loading="lazy"></div>
                     <div class="pizza-info">
                         <div class="pizza-title">
                             <h3>Prosciutto rucola</h3><span class="stars">★★★★★</span>
@@ -160,7 +163,7 @@
                 </article>
                 <article class="pizza-card">
                     <div class="pizza-image">
-                        <img src="img/pizza-6.png" alt="Calzone">
+                        <img src="img/pizza-6.png" alt="Calzone" loading="lazy">
                         <span class="tag">NOU</span>
                     </div>
                     <div class="pizza-info">
@@ -174,19 +177,20 @@
                 </article>
             </div>
         </section>
+
         <section class="reviews">
             <div class="section-head">
                 <span class="section-label">Recenzii</span>
                 <h2>Ce spun cei care au gustat</h2>
             </div>
             <div class="review">
-                <button class="arrow arrow-prev" type="button">‹</button>
+                <button class="arrow arrow-prev" type="button" aria-label="Recenzia anterioară">‹</button>
                 <blockquote>
                     <span class="quote-mark">“</span>
                     <p>Am fost la Napoli anul trecut și pot spune sincer: Margherita de aici e la fel de bună. Marginile
                         pufoase și gustul de lemn ars te duc direct în Italia.</p>
                 </blockquote>
-                <button class="arrow arrow-next" type="button">›</button>
+                <button class="arrow arrow-next" type="button" aria-label="Recenzia următoare">›</button>
             </div>
             <div class="review-author">
                 <span class="avatar">DU</span>
@@ -201,18 +205,20 @@
                 <span class="dot"></span>
             </div>
         </section>
+
         <section class="gallery">
             <div class="section-head">
                 <span class="section-label">Galerie</span>
                 <h2>Din bucătăria noastră</h2>
             </div>
             <div class="gallery-grid">
-                <img class="gallery-tall" src="img/gallery-1.png" alt="Aluat">
-                <img src="img/gallery-2.png" alt="Cuptor">
-                <img class="gallery-tall" src="img/gallery-3.png" alt="Salată caprese">
-                <img src="img/gallery-4.png" alt="Pizzerie">
+                <img class="gallery-tall" src="img/gallery-1.png" alt="Aluat" loading="lazy">
+                <img src="img/gallery-2.png" alt="Cuptor" loading="lazy">
+                <img class="gallery-tall" src="img/gallery-3.png" alt="Salată caprese" loading="lazy">
+                <img src="img/gallery-4.png" alt="Pizzerie" loading="lazy">
             </div>
         </section>
+
         <section class="menu">
             <div class="section-head">
                 <span class="section-label">Meniu</span>
@@ -282,37 +288,39 @@
                 </div>
             </div>
         </section>
-            <section class="subscribe">
-      <div class="subscribe-card">
-        <span class="subscribe-icon">✉</span>
-        <h2>A zecea pizza e din partea casei</h2>
-        <p>Abonează-te și primești cardul de fidelitate pe e-mail.</p>
-        <form class="subscribe-form">
-          <input type="email" placeholder="Adresa ta de e-mail">
-          <button type="submit" class="btn btn-primary">Vreau cardul</button>
-        </form>
-      </div>
-    </section>
+
+        <section class="subscribe">
+            <div class="subscribe-card">
+                <span class="subscribe-icon">✉</span>
+                <h2>A zecea pizza e din partea casei</h2>
+                <p>Abonează-te și primești cardul de fidelitate pe e-mail.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Adresa ta de e-mail" aria-label="Adresa ta de e-mail" required>
+                    <button type="submit" class="btn btn-primary">Vreau cardul</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-      <footer>
-    <a href="#" class="logo">🍕 Forno <span>Vecchio</span></a>
-    <p class="footer-text">Pizzerie napoletană cu cuptor pe lemne în centrul Bălțiului. Livrăm în tot orașul din 2014.</p>
-    <nav class="footer-nav">
-      <a href="#">Acasă</a>
-      <a href="#">Meniu</a>
-      <a href="#">Livrare</a>
-      <a href="#">Despre</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="socials">
-      <a href="#">f</a>
-      <a href="#">in</a>
-      <a href="#">ig</a>
-      <a href="#">yt</a>
-    </div>
-    <p class="copyright">© 2026 Pizzeria Forno Vecchio · Făcut cu ❤ de Nikita Voloșanovski</p>
-  </footer>
+    <footer>
+        <a href="#" class="logo">🍕 Forno <span>Vecchio</span></a>
+        <p class="footer-text">Pizzerie napoletană cu cuptor pe lemne în centrul Bălțiului. Livrăm în tot orașul din 2014.</p>
+        <nav class="footer-nav">
+            <a href="#">Acasă</a>
+            <a href="#">Meniu</a>
+            <a href="#">Livrare</a>
+            <a href="#">Despre</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="YouTube">yt</a>
+        </div>
+        <p class="copyright">© 2026 Pizzeria Forno Vecchio · Făcut cu ❤ de Nikita Voloșanovski</p>
+    </footer>
+
     <a href="#" class="call-btn">📞 Sună acum</a>
 </body>
 
