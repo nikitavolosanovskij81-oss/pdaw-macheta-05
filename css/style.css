@@ -199,3 +199,39 @@ header nav a:first-child::after {
   font-weight: 600;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
+/* 6. Reviews */
+.reviews { padding: 60px 30px; }
+.review { position: relative; max-width: 760px; margin: 0 auto; text-align: center; }
+.quote-mark { display: block; font-family: 'Bitter', serif; font-size: 70px; line-height: 0.8; color: #b71c1c; }
+.review blockquote p { margin-top: 16px; font-family: 'Bitter', serif; font-size: 20px; font-weight: 600; line-height: 1.5; }
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.arrow-prev { left: -60px; }
+.arrow-next { right: -60px; }
+.review-author { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 30px; }
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #b71c1c;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.review-author strong { display: block; font-size: 14px; }
+.review-author span:not(.avatar) { font-size: 12px; color: #777; }
+.dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: #dfe3ea; }
+.dot.active { background: #b71c1c; }
