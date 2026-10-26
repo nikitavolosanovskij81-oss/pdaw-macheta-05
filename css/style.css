@@ -185,3 +185,17 @@ header nav a:first-child::after {
 .price { font-family: 'Bitter', serif; font-size: 18px; font-weight: 700; color: #b71c1c; }
 .old-price { margin-left: 6px; font-size: 11px; font-weight: 400; color: #999; }
 .pizza-bottom .btn { padding: 10px 18px; font-size: 12px; }
+/* 11. Fixed button */
+.call-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  padding: 14px 22px;
+  border-radius: 30px;
+  background: #1b7f3b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
