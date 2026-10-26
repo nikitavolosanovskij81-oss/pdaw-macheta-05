@@ -278,3 +278,51 @@ header nav a:first-child::after {
   font-size: 10px;
   font-weight: 600;
 }
+/* 9. Subscribe */
+.subscribe { padding: 60px 30px; background: #fde8e0; }
+.subscribe-card {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+.subscribe-icon {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1b7f3b;
+  color: #fff;
+  font-size: 22px;
+}
+.subscribe-card h2 { margin-bottom: 8px; font-family: 'Bitter', serif; font-size: 24px; }
+.subscribe-card p { margin-bottom: 24px; font-size: 14px; color: #777; }
+.subscribe-form { display: flex; border: 1px solid #e5e5e5; border-radius: 4px; padding: 4px; }
+.subscribe-form input { flex: 1; border: none; outline: none; padding: 0 14px; font-size: 14px; }
+.subscribe-form .btn { border: none; cursor: pointer; }
+/* 10. Footer */
+footer { padding: 50px 30px 30px; background: #1c1210; color: #fff; text-align: center; }
+footer .logo { color: #fff; }
+footer .logo span { color: #1b7f3b; }
+.footer-text { max-width: 420px; margin: 16px auto 24px; font-size: 13px; line-height: 1.6; color: #a9a0a0; }
+.footer-nav { display: flex; justify-content: center; gap: 30px; margin-bottom: 24px; font-size: 14px; }
+.socials { display: flex; justify-content: center; gap: 12px; margin-bottom: 30px; }
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #b71c1c;
+  font-size: 13px;
+}
+.copyright { padding-top: 24px; border-top: 1px solid #3a2e2b; font-size: 12px; color: #a9a0a0; }
