@@ -235,3 +235,13 @@ header nav a:first-child::after {
 .dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: #dfe3ea; }
 .dot.active { background: #b71c1c; }
+/* 7. Gallery */
+.gallery { padding: 60px 30px; background: #fff8f3; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 190px 190px;
+  gap: 16px;
+}
+.gallery-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.gallery-tall { grid-row: span 2; }
